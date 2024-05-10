@@ -48,7 +48,7 @@ type CharacterResult = {
   {#each formattedData as character}
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <!-- svelte-ignore a11y_click_events_have_key_events -->
-  <div data-modal-target="default-modal" data-modal-toggle="default-modal" onclick={() => handleClick(character._id)} class="flex flex-col bg-slate-300 hover:bg-slate-200 rounded overflow-hidden shadow-lg cursor-pointer w-3/12">
+  <div data-modal-target="default-modal" data-modal-toggle="default-modal" onclick={() => handleClick(character._id)} class="flex flex-col bg-slate-300 hover:bg-slate-200 rounded overflow-hidden shadow-lg cursor-pointer md:w-3/12 w-10/12">
     <div class="px-6 py-4">
       <h2 class="font-bold text-xl mb-2">{character.name}</h2>
       <p>Race: {character.race}</p>
